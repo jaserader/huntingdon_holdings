@@ -1,0 +1,100 @@
+@import "../../dist/bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../../dist/bower_components/neat/app/assets/stylesheets/_neat.scss";
+
+$white: #fff;
+$yellow: #DCB66F;
+
+* {
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+body{
+  margin: 0;
+}
+
+#app{
+  @include outer-container(100%);
+  background: $white;
+
+
+  .background-image{
+    @include span-columns(12);
+    background-image: url("../img/i40.jpg");
+    background-size: 100% auto;
+    background-position: 0 -200px;
+    height: 100vh;
+    position: fixed;
+  }
+
+  .main-content{
+    @include span-columns(12);
+    position: relative;
+    top: 100px;
+    color: $white;
+    text-align: center;
+
+    h1{
+      font-family: 'Playfair Display', serif;
+      font-size: 72px;
+    }
+
+    .smaller-font{
+      font-size: 54px;
+    }
+
+    h2,
+    a{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 200;
+    }
+
+    h2{
+      margin-bottom: 48px;
+      font-size: 28px;
+    }
+
+    a{
+      text-decoration: none;
+      color: $white;
+      font-size: 20px;
+
+      &:hover{
+        transition: all 0.35s;
+        color: $yellow;
+      }
+
+      i{
+        font-size: 24px;
+      }
+    }
+  }
+
+  footer{
+    @include span-columns(12);
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 20px;
+    color: $white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+  }
+}
+
+@media screen and (max-width: 1550px){
+  #app{
+    .background-image{
+      @include span-columns(12);
+      background-image: url("../img/i40.jpg");
+      background-size: 100% auto;
+      background-position: none;
+      height: 100vh;
+      position: fixed;
+    }
+
+    // .main-content{
+    //   top: 50px;
+    // }
+  }
+}
