@@ -3,6 +3,7 @@
 
 $white: #fff;
 $yellow: #DCB66F;
+$dark-gray: #222328;
 
 * {
   box-sizing: border-box;
@@ -11,11 +12,12 @@ $yellow: #DCB66F;
 
 body{
   margin: 0;
+  background: $dark-gray;
 }
 
 #app{
   @include outer-container(100%);
-  background: $white;
+  background: $dark-gray;
 
 
   .background-image{
@@ -35,8 +37,9 @@ body{
     text-align: center;
 
     h1{
-      font-family: 'Playfair Display', serif;
+      font-family: 'Trirong', serif;
       font-size: 72px;
+      margin-bottom: 0px;
     }
 
     .smaller-font{
@@ -79,6 +82,7 @@ body{
     color: $white;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
+    font-size: 14px;
   }
 }
 
@@ -89,12 +93,46 @@ body{
       background-image: url("../img/i40.jpg");
       background-size: 100% auto;
       background-position: none;
-      height: 100vh;
-      position: fixed;
     }
 
-    // .main-content{
-    //   top: 50px;
-    // }
+    .main-content{
+      top: 75px;
+    }
+  }
+}
+
+@media screen and (max-width: 1495px){
+  #app{
+    .background-image{
+      @include span-columns(12);
+      background-image: url("../img/i40.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1070px){
+  #app{
+    .main-content{
+      top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #app{
+    .main-content{
+      top: 334px;
+    }
+  }
+}
+
+@media screen and (max-width:  414px){
+  #app{
+    .main-content{
+      top: 450px;
+    }
   }
 }
