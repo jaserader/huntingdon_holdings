@@ -119,4 +119,16 @@ body {
 
 @media screen and (max-device-width: 414px) {
   #app .main-content {
-    top: 450px; } }
+    top: 450px; }
+    #app .main-content h1 {
+      font-size: 76px; }
+    #app .main-content .smaller-font {
+      font-size: 60px; }
+    #app .main-content h2 {
+      font-size: 44px; }
+    #app .main-content a {
+      font-size: 36px; }
+      #app .main-content a i {
+        font-size: 40px; }
+  #app footer {
+    font-size: 20px; } }
