@@ -121,10 +121,18 @@ body{
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
   #app{
     .main-content{
       top: 334px;
+    }
+  }
+}
+
+@media screen and (max-width: 414px){
+  #app{
+    .main-content{
+      top: 450px;
     }
   }
 }
