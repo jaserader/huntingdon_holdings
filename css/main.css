@@ -125,7 +125,8 @@ body {
     #app .main-content .smaller-font {
       font-size: 60px; }
     #app .main-content h2 {
-      font-size: 44px; }
+      font-size: 40px;
+      margin-top: 15px; }
     #app .main-content a {
       font-size: 36px; }
       #app .main-content a i {
