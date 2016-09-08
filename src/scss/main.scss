@@ -133,6 +133,30 @@ body{
   #app{
     .main-content{
       top: 450px;
+
+      h1{
+        font-size: 76px;
+      }
+
+      .smaller-font{
+        font-size: 60px;
+      }
+
+      h2{
+        font-size: 44px;
+      }
+
+      a{
+        font-size: 36px;
+
+        i{
+          font-size: 40px;
+        }
+      }
+    }
+
+    footer{
+      font-size: 20px;
     }
   }
 }
